@@ -46,7 +46,7 @@ Below is a handful of resources providing further information regarding some of 
 [Can Computers Be Racist? The Human-Like Bias Of Algorithms](https://www.npr.org/2016/03/14/470427605/can-computers-be-racist-the-human-like-bias-of-algorithms)
 
 ### Additional Mathematical Resources
-For a more in depth discussion of the ideas presented here, check out Penn State's lecture [here](https://onlinecourses.science.psu.edu/stat504/node/150/)
+For a more in depth discussion of the mathematical ideas presented here, check out Penn State's lecture [here](https://onlinecourses.science.psu.edu/stat504/node/150/)
 
 If you want to really go down the math rabbit-hole, check out section 4.4 on Logistic Regression from the Elements of Statistical Learning which can be found here: https://web.stanford.edu/~hastie/ElemStatLearn//.
 
