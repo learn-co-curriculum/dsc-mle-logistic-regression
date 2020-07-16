@@ -23,7 +23,7 @@ This is the standard linear regression model <img src="https://render.githubuser
 
 Then, combining these conditional probabilities from multiple features, you maximize the likelihood function of each of those independent conditional probabilities, giving you:  
 
-<img src="https://render.githubusercontent.com/render/math?math=L(\beta_0%2C\beta_1)%3D\prod\limits_{i=1}%5EN\pi_i^{y_i}(1-\pi_i)^{n_i-y_i}%3D\prod\dfrac{\text{exp}\{y_i(\beta_0 %2B \beta_1x_i)\}}{1%2B\text{exp}(\beta_0 %2B \beta_1x_i)}">
+<img src="https://render.githubusercontent.com/render/math?math=L(\beta_0%2C\beta_1)%3D\prod\pi_i^{y_i}(1-\pi_i)^{n_i-y_i}%3D\prod\dfrac{\text{exp}\{y_i(\beta_0 %2B \beta_1x_i)\}}{1%2B\text{exp}(\beta_0 %2B \beta_1x_i)}">
 
 
 
