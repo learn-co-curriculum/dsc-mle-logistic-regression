@@ -17,13 +17,13 @@ As discussed, maximum likelihood estimation finds the underlying parameters of a
 
 For example, when predicting an individual's risk for heart disease, you might consider various factors such as their family history, weight, diet, exercise routines, blood pressure, and cholesterol. When looked at individually, each of these has an associated conditional probability that the individual has heart disease based on each of these factors. Mathematically, you can write each of these probabilities for each factor $X$ as:
 
-<img src="https://render.githubusercontent.com/render/math?math=\pi_i = Pr(Y_i = 1|X_i = x_i)=\dfrac{\text{exp}(\beta_0 + \beta_1 x_i)}{1 + \text{exp}(\beta_0 + \beta_1 x_i)}">
+<img src="https://render.githubusercontent.com/render/math?math=\pi_i = Pr(Y_i = 1|X_i = x_i)=\dfrac{\text{exp}(\beta_0 %2B \beta_1 x_i)}{1 %2B \text{exp}(\beta_0 %2B \beta_1 x_i)}">
 
 This is the standard linear regression model <img src="https://render.githubusercontent.com/render/math?math=(\beta_0%2B\beta_1 x_i)"> you have seen previously, modified to have a range of 0 to 1. The range is modified and constrained by applying the sigmoid function since you're predicting probabilities.
 
 Then, combining these conditional probabilities from multiple features, you maximize the likelihood function of each of those independent conditional probabilities, giving you:  
 
-$ L(\beta_0,\beta_1)=\prod\limits_{i=1}^N \pi_i^{y_i}(1-\pi_i)^{n_i-y_i}=\prod\limits_{i=1}^N \dfrac{\text{exp}\{y_i(\beta_0+\beta_1 x_i)\}}{1+\text{exp}(\beta_0+\beta_1 x_i)}$   
+$ L(\beta_0,\beta_1)=\prod\limits_{i=1}^N \pi_i^{y_i}(1-\pi_i)^{n_i-y_i}=\prod\limits_{i=1}^N \dfrac{\text{exp}\{y_i(\beta_0+\beta_1 x_i)\}}{1+\text{exp}(\beta_0+\beta\_1 x\_i)}$   
 
 
 ## Notes on mathematical symbols
