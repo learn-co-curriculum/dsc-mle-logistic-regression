@@ -15,7 +15,7 @@ You will be able to:
 
 As discussed, maximum likelihood estimation finds the underlying parameters of an assumed distribution to maximize the likelihood of the observations. Logistic regression expands upon this by investigating the conditional probabilities associated with the various features, treating them as independent probabilities and calculating the respective total probability.  
 
-For example, when predicting an individual's risk for heart disease, you might consider various factors such as their family history, weight, diet, exercise routines, blood pressure, and cholesterol. When looked at individually, each of these has an associated conditional probability that the individual has heart disease based on each of these factors. Mathematically, you can write each of these probabilities for each factor $X$ as:
+For example, when predicting an individual's risk for heart disease, you might consider various factors such as their family history, weight, diet, exercise routines, blood pressure, and cholesterol. When looked at individually, each of these has an associated conditional probability that the individual has heart disease based on each of these factors. Mathematically, you can write each of these probabilities for each factor <img src="https://render.githubusercontent.com/render/math?math=X"> as:
 
 <img src="https://render.githubusercontent.com/render/math?math=\pi_i = Pr(Y_i = 1|X_i = x_i) = \dfrac{\text{exp}(\beta_0 %2B \beta_1 x_i)}{1 %2B \text{exp}(\beta_0 %2B \beta_1 x_i)}">
 
@@ -23,12 +23,14 @@ This is the standard linear regression model <img src="https://render.githubuser
 
 Then, combining these conditional probabilities from multiple features, you maximize the likelihood function of each of those independent conditional probabilities, giving you:  
 
-<img src="https://render.githubusercontent.com/render/math?math= L(\beta_0%2C\beta_1)=\prod\pi_i^{y_i}(1-\pi_i)^{n_i-y_i}=\prod\dfrac{\text{exp}\{y_i(\beta_0 %2B \beta_1x_i)\}}{1%2B\text{exp}(\beta_0 %2B \beta\_1x\_i)}">  
+<img src="https://render.githubusercontent.com/render/math?math=L(\beta_0%2C\beta_1)">
+
+<img src="https://render.githubusercontent.com/render/math?math=\prod\pi_i^{y_i}(1-\pi_i)^{n_i-y_i}=\prod\dfrac{\text{exp}\{y_i(\beta_0 %2B \beta_1x_i)\}}{1%2B\text{exp}(\beta_0 %2B \beta\_1x\_i)}">  
 
 
 ## Notes on mathematical symbols
 
-Recall that the $\prod$ sign stands for a product of each of these individual probabilities. (Similar to how $\sum$ stands for the sum of a series.) Since this is a monotonically increasing function, its maximum will be the same as the logarithm of the function, which is typically used in practice in order to decompose this product of probabilities into a sum of log probabilities for easier calculation of the derivative. In future sections, you'll investigate the derivative of this function and then use that in order to code up our own function for logistic regression.  
+Recall that the <img src="https://render.githubusercontent.com/render/math?math=\prod"> sign stands for a product of each of these individual probabilities. (Similar to how <img src="https://render.githubusercontent.com/render/math?math=\sum"> stands for the sum of a series.) Since this is a monotonically increasing function, its maximum will be the same as the logarithm of the function, which is typically used in practice in order to decompose this product of probabilities into a sum of log probabilities for easier calculation of the derivative. In future sections, you'll investigate the derivative of this function and then use that in order to code up our own function for logistic regression.  
 
 ## Algorithm bias and ethical concerns
 
