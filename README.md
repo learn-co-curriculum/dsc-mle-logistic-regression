@@ -17,7 +17,9 @@ As discussed, maximum likelihood estimation finds the underlying parameters of a
 
 For example, when predicting an individual's risk for heart disease, you might consider various factors such as their family history, weight, diet, exercise routines, blood pressure, and cholesterol. When looked at individually, each of these has an associated conditional probability that the individual has heart disease based on each of these factors. Mathematically, you can write each of these probabilities for each factor $X$ as:
 
-<img src="https://render.githubusercontent.com/render/math?math=\pi_i = Pr(Y_i = 1|X_i = x_i)=\dfrac{\text{exp}(\beta_0 %2B \beta_1 x_i)}{1 %2B \text{exp}(\beta_0 %2B \beta_1 x_i)}">
+<img src="https://render.githubusercontent.com/render/math?math=\pi_i = Pr(Y_i = 1|X_i = x_i)">
+
+<img src="\dfrac{\text{exp}(\beta_0 %2B \beta_1 x_i)}{1 %2B \text{exp}(\beta_0 %2B \beta_1 x_i)}">
 
 This is the standard linear regression model <img src="https://render.githubusercontent.com/render/math?math=(\beta_0%2B\beta_1 x_i)"> you have seen previously, modified to have a range of 0 to 1. The range is modified and constrained by applying the sigmoid function since you're predicting probabilities.
 
