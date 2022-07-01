@@ -1,4 +1,3 @@
-
 # MLE and Logistic Regression
 
 ## Introduction
@@ -17,7 +16,7 @@ As discussed, maximum likelihood estimation finds the underlying parameters of a
 
 For example, when predicting an individual's risk for heart disease, you might consider various factors such as their family history, weight, diet, exercise routines, blood pressure, and cholesterol. When looked at individually, each of these has an associated conditional probability that the individual has heart disease based on each of these factors. Mathematically, you can write each of these probabilities for each factor $X$ as:
 
-$\pi_i = Pr(Y_i = 1|X_i = x_i)=\dfrac{\text{exp}(\beta_0 + \beta_1 x_i)}{1 + \text{exp}(\beta_0 + \beta_1 x_i)}$
+$\pi_i=Pr(Y_i=1|X_i=x_i)=\dfrac{\text{exp}(\beta_0+\beta_1 x_i)}{1+\text{exp}(\beta_0+\beta_1 x_i)}$
 
 This is the standard linear regression model ($\beta_0+\beta_1 x_i$) you have seen previously, modified to have a range of 0 to 1. The range is modified and constrained by applying the sigmoid function since you're predicting probabilities.
 
@@ -51,7 +50,6 @@ Below are a handful of resources providing further information regarding some of
 - [Can Computers Be Racist? The Human-Like Bias Of Algorithms](https://www.npr.org/2016/03/14/470427605/can-computers-be-racist-the-human-like-bias-of-algorithms)
 
 ### Additional mathematical resources
-For a more in-depth discussion of the mathematical ideas, check out Penn State's lecture [here](https://onlinecourses.science.psu.edu/stat504/node/150/)
 
 If you want to really go down the math rabbit-hole, check out section 4.4 on Logistic Regression from the Elements of Statistical Learning which can be found here: https://web.stanford.edu/~hastie/ElemStatLearn//.
 
