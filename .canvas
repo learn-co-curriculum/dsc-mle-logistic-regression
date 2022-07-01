@@ -1,18 +1,6 @@
 ---
 :lessons:
-- :id: 12671
-  :course_id: 346
-  :canvas_url: https://learning.flatironschool.com/courses/346/pages/dsc-mle-logistic-regression
-  :type: page
-- :id: 12962
-  :course_id: 153
-  :canvas_url: https://learning.flatironschool.com/courses/153/pages/mle-and-logistic-regression
-  :type: page
-- :id: 12965
-  :course_id: 153
-  :canvas_url: https://learning.flatironschool.com/courses/153/pages/mle-and-logistic-regression-3
-  :type: page
-- :id: 12967
-  :course_id: 153
-  :canvas_url: https://learning.flatironschool.com/courses/153/pages/mle-and-logistic-regression-2
+- :id: 27031
+  :course_id: 467
+  :canvas_url: https://my.learn.co/courses/467/pages/mle-and-logistic-regression
   :type: page
